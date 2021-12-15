@@ -1,0 +1,20 @@
+module.exports = {
+  type: 'mysql',
+  host: process.env.DB_HOST || 'localhost',
+  port: Number(process.env.DB_PORT) || 3306,
+  username: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || 'root',
+  database: process.env.DB_DATABASE || 'educonectedb',
+  charset: 'utf8mb4_unicode_ci',
+  timezone: process.env.TYPEORM_TIMEZONE,
+  dateString: true,
+  retryAttempts: 5,
+  retryDelay: 3000,
+  autoLoadEntities: true,
+  synchronize: false,
+  migrations: ['dist/migrations/**/*{.js,.ts}'],
+  entities: ['dist/src/**/*.entity{.js,.ts}'],
+  cli: {
+    migrationsDir: 'migrations',
+  },
+};
