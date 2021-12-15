@@ -1,0 +1,5 @@
+FROM adminer:4.8.1-standalone
+
+ENV ADMINER_DESIGN='mvt'
+
+RUN echo 'Iniciando processo de estilização do adminer'
