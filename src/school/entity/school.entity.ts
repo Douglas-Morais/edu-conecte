@@ -1,4 +1,5 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, Index, OneToMany, PrimaryColumn, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { SchoolDetail } from "./school-detail.entity";
 
 @Entity()
 export class School {
@@ -10,6 +11,7 @@ export class School {
   })
   cnpj: string;
 
+  @Index()
   @Column({
     type: 'varchar',
     length: 160,
@@ -60,11 +62,16 @@ export class School {
   @CreateDateColumn({
     comment: 'Cadastro criado em...'
   })
-  created: Date;
+  createdAt: Date;
 
   @UpdateDateColumn({
     comment: 'Atualização feita em...'
   })
-  updated: Date;
+  updatedAt: Date;
+
+  @OneToMany(() => SchoolDetail, schoolDetail => schoolDetail.id, {
+    cascade: true,
+  })
+  schoolDetail: SchoolDetail[];
 
 }
