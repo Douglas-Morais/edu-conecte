@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { getConnectionOptions } from 'typeorm';
+import { SchoolModule } from './school/school.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { getConnectionOptions } from 'typeorm';
     TypeOrmModule.forRootAsync({
       useFactory: async () => Object.assign(await getConnectionOptions()),
     }),
+    SchoolModule,
   ],
   controllers: [],
   providers: [],
