@@ -1,4 +1,12 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToMany,
+  ManyToOne,
+  PrimaryGeneratedColumn
+} from "typeorm";
+import { Teacher } from "../../teatcher/entity/teacher.entity";
 import { School } from "./school.entity";
 
 @Entity()
@@ -17,7 +25,7 @@ export class SchoolDetail {
   grade: number;
 
   @Column({
-    type:'char',
+    type: 'char',
     length: 1,
     comment: 'Equivalente a turma no Brasil. Ex: 1ª Série "B"'
   })
@@ -27,5 +35,9 @@ export class SchoolDetail {
     nullable: false,
   })
   school: School;
+
+  @ManyToMany(() => Teacher)
+  @JoinTable({ name: 'school_detail_teacher' })
+  teacher: Teacher[];
 
 }
