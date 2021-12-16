@@ -57,6 +57,13 @@ export class School {
     default: false,
     comment: 'Ativado após veracidade das informações cadastradas'
   })
+  confirmedInfors: boolean;
+
+  @Column({
+    type: 'bool',
+    default: false,
+    comment: 'Permissão de acesso ao sistema'
+  })
   activated: boolean;
 
   @CreateDateColumn({
