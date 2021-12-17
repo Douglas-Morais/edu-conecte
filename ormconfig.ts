@@ -10,11 +10,11 @@ module.exports = {
   dateString: 'DATETIME',
   retryAttempts: 5,
   retryDelay: 3000,
-  autoLoadEntities: true,
+  autoLoadEntities: false,
   synchronize: true,
   migrations: ['dist/migrations/**/*{.js,.ts}'],
   entities: ['dist/src/**/*.entity{.js,.ts}'],
   cli: {
-    migrationsDir: 'migrations',
+    migrationsDir: 'src/migrations',
   },
 };
