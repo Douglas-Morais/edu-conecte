@@ -6,6 +6,7 @@ import { SchoolModule } from './school/school.module';
 import { TeatcherModule } from './teatcher/teatcher.module';
 import { NoteModule } from './note/note.module';
 import { ParentsModule } from './parents/parents.module';
+import { StudentModule } from './student/student.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { ParentsModule } from './parents/parents.module';
     TeatcherModule,
     NoteModule,
     ParentsModule,
+    StudentModule,
   ],
   controllers: [],
   providers: [],

@@ -6,6 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn
 } from "typeorm";
+import { Student } from "../../student/entity/student.entity";
 import { Teacher } from "../../teatcher/entity/teacher.entity";
 import { School } from "./school.entity";
 

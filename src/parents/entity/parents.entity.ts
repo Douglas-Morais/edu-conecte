@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryColumn } from "typeorm";
+import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryColumn } from "typeorm";
+import { Student } from "../../student/entity/student.entity";
 
 @Entity()
 export class Parents {
@@ -29,5 +30,9 @@ export class Parents {
     comment: 'Senha de acesso criptografada'
   })
   password: string;
+
+  @ManyToMany(() => Student, student => student.parents)
+  @JoinTable({name: 'parents_student'})
+  students: Student[];
 
 }
