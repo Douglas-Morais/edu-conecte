@@ -40,7 +40,7 @@ export class Teacher {
     nullable: true,
     comment: 'Senha criptografada para login'
   })
-  password: string;
+  password?: string;
 
   @Column({
     type: 'bool',
