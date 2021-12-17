@@ -5,6 +5,7 @@ import { getConnectionOptions } from 'typeorm';
 import { SchoolModule } from './school/school.module';
 import { TeatcherModule } from './teatcher/teatcher.module';
 import { NoteModule } from './note/note.module';
+import { ParentsModule } from './parents/parents.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { NoteModule } from './note/note.module';
     SchoolModule,
     TeatcherModule,
     NoteModule,
+    ParentsModule,
   ],
   controllers: [],
   providers: [],
