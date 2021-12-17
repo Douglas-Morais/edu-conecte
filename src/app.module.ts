@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { getConnectionOptions } from 'typeorm';
 import { SchoolModule } from './school/school.module';
 import { TeatcherModule } from './teatcher/teatcher.module';
+import { NoteModule } from './note/note.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { TeatcherModule } from './teatcher/teatcher.module';
     }),
     SchoolModule,
     TeatcherModule,
+    NoteModule,
   ],
   controllers: [],
   providers: [],

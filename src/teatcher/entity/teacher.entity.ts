@@ -3,10 +3,12 @@ import {
   CreateDateColumn,
   Entity,
   Index,
+  JoinTable,
   ManyToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn
 } from 'typeorm';
+import { Note } from '../../note/entity/note.entity';
 import { SchoolDetail } from '../../school/entity/school-detail.entity';
 
 @Entity()
@@ -68,5 +70,9 @@ export class Teacher {
 
   @ManyToMany(() => SchoolDetail)
   schoolDetail: SchoolDetail[];
+
+  @ManyToMany(() => Note)
+  @JoinTable({ name: 'teacher_note' })
+  note: Note[];
 
 }
