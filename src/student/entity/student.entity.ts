@@ -1,5 +1,5 @@
-import { Column, Entity, ManyToMany, ManyToOne, PrimaryColumn } from "typeorm";
-import { Parents } from "../../parents/entity/parents.entity";
+import { Column, Entity, ManyToOne, OneToMany, PrimaryColumn } from "typeorm";
+import { ParentsStudent } from "../../parents/entity/parents-students.entity";
 import { SchoolDetail } from "../../school/entity/school-detail.entity";
 
 @Entity()
@@ -18,10 +18,10 @@ export class Student {
   })
   name: string;
 
-  @ManyToMany(() => Parents, parents => parents.students)
-  parents: Parents[];
-
   @ManyToOne(() => SchoolDetail)
   schoolDetail: SchoolDetail;
+
+  @OneToMany(() => ParentsStudent, parentsStudent => parentsStudent.student)
+  parentsStudent: ParentsStudent[];
 
 }

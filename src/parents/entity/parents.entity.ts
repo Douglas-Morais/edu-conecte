@@ -1,5 +1,5 @@
-import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryColumn } from "typeorm";
-import { Student } from "../../student/entity/student.entity";
+import { Column, Entity, OneToMany, PrimaryColumn } from "typeorm";
+import { ParentsStudent } from "./parents-students.entity";
 
 @Entity()
 export class Parents {
@@ -31,8 +31,7 @@ export class Parents {
   })
   password: string;
 
-  @ManyToMany(() => Student, student => student.parents)
-  @JoinTable({name: 'parents_student'})
-  students: Student[];
+  @OneToMany(() => ParentsStudent, parentsStudent => parentsStudent.parents)
+  parentsStudent: ParentsStudent[];
 
 }
