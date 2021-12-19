@@ -15,7 +15,6 @@ export class SchoolService {
    * @returns Array of School containing @param
    */
   async getSchoolFromFiveChar(searchString: string): Promise<School[]> {
-    console.log(searchString);
     return await this.schoolRepository.find({
       where: { name: ILike(`%${searchString}%`) },
       take: 10
