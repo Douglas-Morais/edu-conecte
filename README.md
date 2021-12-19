@@ -1,51 +1,85 @@
+<!-- markdownlint-disable MD033 MD036 MD041 MD014 -->
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <img src="./public/assets/dowhile2021.png" height="50"><br><br>
+  <img src="./public/assets/fortBrasil.png" height="50">
+  &nbsp;&nbsp;
+  <img src="./public/assets/rocketseat.png" height="30">
 </p>
+<br>
+<br>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<h1 align="center">EDU Conecte</h1>
+<p align="center">🕮 Aproximando os pais no acompanhamento escolar dos filhos</p>
+<br>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+**💻 Desafio DoWhile2021 - FortBrasil / Parceria Rocketseat 🚀**
 
-## Description
+## Sumário
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [Sumário](#sumário)
+- [Descrição](#descrição)
+  - [🔥 Desafio](#-desafio)
+  - [💡 Solução](#-solução)
+    - [Breve Explanação](#breve-explanação)
+    - [Atacando parte do Problema](#atacando-parte-do-problema)
+- [Instalação](#instalação)
+- [Iniciando servidor](#iniciando-servidor)
+  - [Container banco de dados MySQL com Adminer](#container-banco-de-dados-mysql-com-adminer)
+  - [Servidor de Aplicação](#servidor-de-aplicação)
+- [Testes](#testes)
+- [Licença de uso](#licença-de-uso)
 
-## Installation
+
+## Descrição
+
+### 🔥 Desafio
+
+> "Pensando em construir o futuro, como você solucionaria os problemas de acesso à educação hoje, utilizando a tecnologia?"
+
+### 💡 Solução
+
+#### Breve Explanação
+
+        Os problemas com a educação brasileira já são reconhecidos de décadas. Poucos avanços são notados quando leva em consideração a classe mais pobre, aquela que depende diretamente dos serviços públicos.  
+        Do desinteresse na grade curricular à falta de acompanhamento dos pais, da formação dos professores à falta de infraestrutura, sofremos desde problemas culturais à falta de atenção do governo.  
+
+#### Atacando parte do Problema
+
+        Pensando em construir com um futuro, minha ideia é contribuir com parte do problema, facilitando para os pais um acompanhamento pós aula mais direto. A rotina diária dos pais por vezes não ajuda o acompanhamento dos filhos nas atividades solicitadas pelas escolas.
+
+## Instalação
 
 ```bash
-$ npm install
+  $ npm install
 ```
 
-## Running the app
+## Iniciando servidor
+
+### Container banco de dados MySQL com Adminer
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# Docker
+$ docker-compose up -d
 ```
 
-## Test
+MySQL [https://localhost:3306](https://localhost:3306)
+
+Adminer [https://localhost:8080](https://localhost:8080)
+
+### Servidor de Aplicação
+
+```bash
+  # development
+  $ npm run start
+
+  # watch mode - hot reload
+  $ npm run start:dev
+
+  # production mode
+  $ npm run start:prod
+```
+
+## Testes
 
 ```bash
 # unit tests
@@ -58,16 +92,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Licença de uso
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+[MIT](LICENSE).
