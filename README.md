@@ -67,9 +67,9 @@ A rotina diária dos pais por vezes não ajuda o acompanhamento dos filhos nas a
 
 #### Resolução
 
-Essa solução tecnológica implenta de forma mais simples possível uma comunicação direta do professor para com os pais dos alunos que leciona. Através de notificações o professor poderá ao final de cada aula regitrar notas no EDU Conecte(sistema) selecionando a turma, série e categoria da nota que automaticamente após registrado o sistema notificará os pais por email.  
+Essa solução tecnológica implenta de forma mais simples possível uma comunicação direta do professor para com os pais dos alunos que leciona. O professor poderá ao final de cada aula regitrar notificações no EDU Conecte(sistema) selecionando a turma, série e categoria da notificação que automaticamente após registrado o sistema notificará os pais por email.  
 Exemplo:  
-  -- Nota do professor de matemática: "Dever de casa, livro Saber matemática pág. 56, exercicios." | Prazo final: 10/3/2022.  
+  -- Notificação do professor de matemática: "Dever de casa, livro Saber matemática pág. 56, exercicios." | Prazo final: 10/3/2022.  
 
 #### Esquemático geral
 
