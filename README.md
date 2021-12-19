@@ -46,6 +46,7 @@
   - [Container banco de dados MySQL com Adminer](#container-banco-de-dados-mysql-com-adminer)
   - [Servidor da Aplicação](#servidor-da-aplicação)
 - [Testes](#testes)
+- [Documentação da API](#documentação-da-api)
 - [Licença de uso](#licença-de-uso)
 
 ## Descrição
@@ -165,6 +166,12 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Documentação da API
+
+Documentação disponível após o [start do servidor](#iniciando-servidor)
+
+[http://localhost:3000/docs/](http://localhost:3000/docs/)
 
 ## Licença de uso
 
