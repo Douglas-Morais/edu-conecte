@@ -52,7 +52,7 @@ A rotina diária dos pais por vezes não ajuda o acompanhamento dos filhos nas a
 
 <br>
 <p align="center">
-  <img src="./public/assets/edu-conecte-mapa-mental.png">
+  <img src="./public/assets/edu-conecte-mapa-mental.png" width="800">
 </p>
 <br>
 
