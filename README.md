@@ -22,6 +22,7 @@
   - [💡 Solução](#-solução)
     - [Breve Explanação](#breve-explanação)
     - [Atacando parte do Problema](#atacando-parte-do-problema)
+    - [Esquemático geral](#esquemático-geral)
 - [Instalação](#instalação)
 - [Iniciando servidor](#iniciando-servidor)
   - [Container banco de dados MySQL com Adminer](#container-banco-de-dados-mysql-com-adminer)
@@ -40,12 +41,20 @@
 
 #### Breve Explanação
 
-        Os problemas com a educação brasileira já são reconhecidos de décadas. Poucos avanços são notados quando leva em consideração a classe mais pobre, aquela que depende diretamente dos serviços públicos.  
-        Do desinteresse na grade curricular à falta de acompanhamento dos pais, da formação dos professores à falta de infraestrutura, sofremos desde problemas culturais à falta de atenção do governo.  
+Os problemas com a educação brasileira já são reconhecidos de décadas. Poucos avanços são notados quando leva em consideração a classe mais pobre, aquela que depende diretamente dos serviços públicos.  
+Do desinteresse na grade curricular à falta de acompanhamento dos pais, da formação dos professores à falta de infraestrutura, sofremos desde problemas culturais à falta de atenção do governo.  
 
 #### Atacando parte do Problema
 
-        Pensando em construir com um futuro, minha ideia é contribuir com parte do problema, facilitando para os pais um acompanhamento pós aula mais direto. A rotina diária dos pais por vezes não ajuda o acompanhamento dos filhos nas atividades solicitadas pelas escolas.
+A rotina diária dos pais por vezes não ajuda o acompanhamento dos filhos nas atividades solicitadas pelas escolas. Pensando em construir o futuro, minha ideia é contribuir com parte da solução, facilitando para os pais um acompanhamento pós aula mais eficiente.
+
+#### Esquemático geral
+
+<br>
+<p align="center">
+  <img src="./public/assets/edu-conecte-mapa-mental.png">
+</p>
+<br>
 
 ## Instalação
 
