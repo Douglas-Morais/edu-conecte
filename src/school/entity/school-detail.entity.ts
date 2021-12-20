@@ -6,7 +6,6 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn
 } from "typeorm";
-import { Student } from "../../student/entity/student.entity";
 import { Teacher } from "../../teatcher/entity/teacher.entity";
 import { School } from "./school.entity";
 
@@ -20,7 +19,7 @@ export class SchoolDetail {
 
   @Column({
     type: 'tinyint',
-    zerofill: true,
+    unsigned: true,
     comment: 'Equivalente a série no Brasil. Ex: 1ª Série, persistido "1"'
   })
   grade: number;
