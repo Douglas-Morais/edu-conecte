@@ -69,6 +69,7 @@ export class Teacher {
   updatedAt: Date;
 
   @ManyToMany(() => SchoolDetail)
+  @JoinTable({ name: 'school_detail_teacher' })
   schoolDetail: SchoolDetail[];
 
   @ManyToMany(() => Note)

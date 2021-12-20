@@ -3,7 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { getConnectionOptions } from 'typeorm';
 import { SchoolModule } from './school/school.module';
-import { TeatcherModule } from './teatcher/teatcher.module';
+import { TeacherModule } from './teacher/teacher.module';
 import { NoteModule } from './note/note.module';
 import { ParentsModule } from './parents/parents.module';
 import { StudentModule } from './student/student.module';
@@ -18,7 +18,7 @@ import { StudentModule } from './student/student.module';
       useFactory: async () => Object.assign(await getConnectionOptions()),
     }),
     SchoolModule,
-    TeatcherModule,
+    TeacherModule,
     NoteModule,
     ParentsModule,
     StudentModule,
