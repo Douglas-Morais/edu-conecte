@@ -19,7 +19,6 @@ export class Teacher {
   })
   id: number;
 
-  @Index()
   @Column({
     type: 'varchar',
     length: 150,
@@ -28,6 +27,15 @@ export class Teacher {
   })
   name: string;
 
+  @Column({
+    type: 'varchar',
+    length: 60,
+    nullable: false,
+    comment: 'Especialidade que leciona'
+  })
+  subjets: string;
+
+  @Index({ unique: true })
   @Column({
     type: 'varchar',
     length: 150,
@@ -40,6 +48,7 @@ export class Teacher {
     type: 'varchar',
     length: 255,
     nullable: true,
+    select: false,
     comment: 'Senha criptografada para login'
   })
   password?: string;
