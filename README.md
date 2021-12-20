@@ -107,7 +107,14 @@ Exemplo:
 
 ## Status da Aplicação
 
-🚧 Novas funcionalidades 🚀 em construção... 🚧
+🚧 Novas funcionalidades 🚀 em construção... 🚧  
+O desenvolvimento avança nas seguintes etapas:
+
+  1. `Funcionalidade`
+  2. `Teste Manual`
+  3. `Testes Unitários`
+
+O desenvolvimento dos testes End-To-End será codificado após [Fluxo dos processos](#detalhamento-de-fluxo) desenvolvidos.
 
 ## Instalação
 
