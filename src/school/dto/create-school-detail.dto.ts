@@ -1,9 +1,10 @@
 import { ApiHideProperty, ApiProperty } from "@nestjs/swagger";
-import { Min, Max, IsAlpha, Length } from "class-validator";
+import { Min, Max, IsAlpha, Length, IsOptional } from "class-validator";
 
 export class CreateSchoolDetailDTO {
   @ApiHideProperty()
-  id: number;
+  @IsOptional()
+  id?: number;
 
   @ApiProperty({
     minimum: 1,
