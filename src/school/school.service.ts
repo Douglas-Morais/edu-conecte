@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ILike } from 'typeorm';
+import { CreateSchoolDTO } from './dto/create-school.dto';
 import { School } from './entity/school.entity';
 import { SchoolRepository } from './entity/school.repository';
 
@@ -20,4 +21,17 @@ export class SchoolService {
       take: 10
     });
   }
+
+  /**
+   * Insert new data into school table 
+   * @param createSchool of CreateSchoolDTO
+   * @returns Promise of School
+   */
+  async createSchool(createSchool: CreateSchoolDTO): Promise<School> {
+    createSchool.schoolDetail.forEach((schoolDetail) => {
+      schoolDetail.school = { cnpj: createSchool.cnpj };
+    });
+    return await this.schoolRepository.save(createSchool)
+  }
+
 }
